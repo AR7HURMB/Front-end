@@ -1,2 +1,1 @@
-# Front-end
-A repository for my front-en projects.
+A repository for my front-end projects.
