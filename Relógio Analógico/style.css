@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+}
+
+.clock {
+    --size: 30em;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    z-index: -1;
+    border-radius: 50%;
+    background-image: conic-gradient(blue, red);
+    filter: blur(8px);
+    padding: 6px;
+}
+
+span {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+}
+
+#span1 {
+    translate: 4.15em -7.3em;
+}
+
+#span2 {
+    translate: 7.3em -4.15em;
+}
+
+#span3 {
+    translate: 8.3em;
+}
+
+#span4 {
+    translate: 7.3em 4.15em;
+}
+
+#span5 {
+    translate: 4.15em 7.3em;
+}
+
+#span6 {
+    translate: 0 8.3em;
+}
+
+#span7 {
+    translate: -4.15em 7.3em;
+}
+
+#span8 {
+    translate: -7.3em 4.15em;
+}
+
+#span9 {
+    translate: -8.3em;
+}
+
+#span10 {
+    translate: -7.3em -4.15em;
+}
+
+#span11 {
+    translate: -4.15em -7.3em;
+}
+
+#span12 {
+    translate: 0 -8.3em;
+}
+
+#hours-pointer {
+    --bg-color: #4b4bff;
+    width: .6em;
+    height: 18em;
+    background-color: var(--bg-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .line {
+        position: absolute;
+        width: 5px;
+        height: 26px;
+        background: var(--bg-color);
+    }
+    #line1 {
+        rotate: 45deg;
+        translate: -6px -8px;
+    }
+    #line2 {
+        rotate: -45deg;
+        translate: 9px -8px;
+    }
+}
+
+#mins-pointer {
+    --bg-color: #00c8c8;
+    position: absolute;
+    width: .5em;
+    height: 13em;
+    background-color: var(--bg-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .line {
+        position: absolute;
+        width: 4px;
+        height: 22px;
+        background: var(--bg-color);
+    }
+    #line1 {
+        rotate: 45deg;
+        translate: -6px -5px;
+    }
+    #line2 {
+        rotate: -45deg;
+        translate: 8px -5px;
+    }
+}
+
+#secs-pointer {
+    --bg-color: #b0ebff;
+    position: absolute;
+    width: .4em;
+    height: 8em;
+    background-color: var(--bg-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    .line {
+        position: absolute;
+        width: 3px;
+        height: 18px;
+        background: var(--bg-color);
+    }
+    #line1 {
+        rotate: 45deg;
+        translate: -5px -3px;
+    }
+    #line2 {
+        rotate: -45deg;
+        translate: 8px -3px;
+    }
+}
