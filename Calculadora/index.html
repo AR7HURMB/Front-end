@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora | Arthur</title>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+        <div id="buttons">
+            <button onclick="addCharacter('7')">7</button>
+            <button onclick="addCharacter('8')">8</button>
+            <button onclick="addCharacter('9')">9</button>
+            <button onclick="addCharacter('+')" class="operator-btn">+</button>
+            <button onclick="addCharacter('4')">4</button>
+            <button onclick="addCharacter('5')">5</button>
+            <button onclick="addCharacter('6')">6</button>
+            <button onclick="addCharacter('-')" class="operator-btn">-</button>
+            <button onclick="addCharacter('1')">1</button>
+            <button onclick="addCharacter('2')">2</button>
+            <button onclick="addCharacter('3')">3</button>
+            <button onclick="addCharacter('*')" class="operator-btn">*</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="addCharacter('0')">0</button>
+            <button onclick="addCharacter('/')" class="operator-btn">/</button>
+            <button onclick="calculate()" class="equal-btn">=</button>
+        </div>
+    </div>
+</body>
+</html>
